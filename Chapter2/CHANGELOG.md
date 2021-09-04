@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 
 
+## Ep 2
+
+- User can create a ne account.
+
 ## Ep 1
 
 - Know about the new project.
