@@ -9,3 +9,4 @@ app.get("/", (request, response) => {
 });
 
 app.listen(3333, () => console.log("⚙️  Api listening on port: 3333 ⚙️"));
+ 
