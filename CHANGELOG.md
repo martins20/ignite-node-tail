@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Ep 4
+
+- Add insomnia file to test http requests.
+
 ## Ep 3
 
 - Using the HTTP methods with express.

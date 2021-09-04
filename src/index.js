@@ -46,8 +46,7 @@ app.delete("/courses/:index", (request, response) => {
 
   // Removing the course in a specific index by id
   const filteredListOfCourses = listOfCourses.filter(
-    _,
-    (index) => index !== indexParam
+    (_,index) => index !== indexParam
   );
 
   return response.json(filteredListOfCourses);
