@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 
 
+## Ep 4
+
+- Gettint the client statement.
+- Throw a request error if the customer does not exists.
+
 ## Ep 3
 
 - Add rule to create an accout if the cpf does not exists.

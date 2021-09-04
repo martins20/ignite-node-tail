@@ -5,7 +5,7 @@
 ### Requirements
 
 - [x] Must be possible to create an account.
-- [ ] Must be possible to search the bank statement of the client.
+- [x] Must be possible to search the bank statement of the client.
 - [ ] Must be possible to make a deposit.
 - [ ] Must be possible to make a withdrawal.
 - [ ] Must be possible to search the bank statement by date.
@@ -16,7 +16,7 @@
 ### Business Rules
 
 - [x] It shouldn't be possible to create an account with an existing CPF.
-- [ ] It shouldn't be possible to make a deposit with an nonexistent account.
+- [x] It shouldn't be possible to make a deposit with an nonexistent account.
 - [ ] It shouldn't be possible to search a bank statement with an nonexistent account.
 - [ ] It shouldn't be possible to make a withdrawal with an nonexistent account.
 - [ ] It shouldn't be possible to delete an nonexistent account.
