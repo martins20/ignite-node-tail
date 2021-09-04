@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## Ep 5
+
+- Knowledge about Param types.
+- Using express JSON midleware to get json request body. 
+
 ## Ep 4
 
 - Add insomnia file to test http requests.
@@ -19,3 +24,5 @@ All notable changes to this project will be documented in this file.
 
 - Knowledge about the express package and Api REST best practices.
 - Start the server with express
+
+# Chapter 1
