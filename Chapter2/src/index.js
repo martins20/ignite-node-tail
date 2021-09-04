@@ -7,6 +7,24 @@ app.use(express.json());
 
 const customers = [];
 
+// Middleware
+
+const verifyIfExistsAccountCPF = (request, response, next) => {
+  const { cpf } = request.headers;
+
+  const customer = customers.find((customer) => customer.cpf === cpf);
+
+  if (!customer) {
+    return response.status(404).json({
+      error: "Customer not found.",
+    });
+  }
+
+  request.customer = customer;
+
+  return next();
+};
+
 app.post("/accounts", (request, response) => {
   const { name, cpf } = request.body;
 
@@ -20,25 +38,19 @@ app.post("/accounts", (request, response) => {
     });
   }
 
-  app.get("/statements", (request, response) => {
-    const { cpf } = request.headers;
-
-    const customer = customers.find((customer) => customer.cpf === cpf);
-
-    if (!customer) {
-      return response.status(404).json({
-        error: "Customer not found.",
-      });
-    }
-
-    return response.json(customer.statement);
-  });
-
   const createdCustomer = { id: uuidv4(), name, cpf, statement: [] };
 
   customers.push(createdCustomer);
 
   return response.status(201).json(createdCustomer);
+});
+
+// app.use(verifyIfExistsAccountCPF);
+
+app.get("/statements", verifyIfExistsAccountCPF, (request, response) => {
+  const { customer } = request;
+
+  return response.json(customer.statement);
 });
 
 app.listen(3333, () => console.log("⚙️  Api listening on port: 3333 ⚙️"));

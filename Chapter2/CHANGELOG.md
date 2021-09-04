@@ -2,14 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-
 ## Ep 5
 
-- Gettinf the client statement passing the cpf from headers.
+- Getting the client statement passing the cpf from headers.
+- Add midleware to verify if the customer already exists, and pass the customer data into a custo request called by customer.
 
 ## Ep 4
 
-- Gettinf the client statement.
+- Getting the client statement.
 - Throw a request error if the customer does not exists.
 
 ## Ep 3
