@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Ep 7
+
+- Search a statement by date.
+
 ## Ep 6
 
 - Customer can make a withdrawl.

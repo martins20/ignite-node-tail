@@ -105,4 +105,17 @@ app.post("/withdraw", verifyIfExistsAccountCPF, (request, response) => {
   return response.status(201).json(statementOperation);
 });
 
+app.get("/statements/date", verifyIfExistsAccountCPF, (request, response) => {
+  const { customer } = request;
+  const { date } = request.query;
+
+  const formatedDate = new Date(date + "00:00").toDateString();
+
+  const foundStatementsByDate = customer.statement.filter(
+    (statement) => statement.created_at.toDateString() === formatedDate
+  );
+
+  return response.json(foundStatementsByDate);
+});
+
 app.listen(3333, () => console.log("⚙️  Api listening on port: 3333 ⚙️"));
