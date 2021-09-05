@@ -141,4 +141,12 @@ app.delete("/accounts", verifyIfExistsAccountCPF, (request, response) => {
   return response.status(204).json();
 });
 
+app.get("/balance", verifyIfExistsAccountCPF, (request, response) => {
+  const { customer } = request;
+
+  const customerBalance = getCustomerBalace(customer.statement);
+
+  return response.json({ balance: customerBalance });
+});
+
 app.listen(3333, () => console.log("⚙️  Api listening on port: 3333 ⚙️"));

@@ -4,7 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## Ep 9
 
-- Delete a customer account
+- Delete a customer account.
+- Return the customer balance.
 
 ## Ep 8
 

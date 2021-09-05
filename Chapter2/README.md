@@ -12,6 +12,7 @@
 - [x] Must be possible to update the client account data.
 - [x] Must be possible to get the client account data.
 - [x] Must be possible to delete an account.
+- [x] Must be possible to return the client balance.
 
 ### Business Rules
 
