@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## Ep 5
 
+- Customent can create a new statement operation.
+
+## Ep 5
+
 - Getting the client statement passing the cpf from headers.
 - Add midleware to verify if the customer already exists, and pass the customer data into a custo request called by customer.
 

@@ -53,4 +53,21 @@ app.get("/statements", verifyIfExistsAccountCPF, (request, response) => {
   return response.json(customer.statement);
 });
 
+app.post("/deposits", verifyIfExistsAccountCPF, (request, response) => {
+  const { description, amount } = request.body;
+
+  const { customer } = request;
+
+  const statementOperation = {
+    description,
+    amount,
+    type: "credit",
+    created_at: new Date(),
+  };
+
+  customer.statement.push(statementOperation);
+
+  return response.status(201).json(statementOperation);
+});
+
 app.listen(3333, () => console.log("⚙️  Api listening on port: 3333 ⚙️"));
