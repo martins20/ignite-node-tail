@@ -118,4 +118,19 @@ app.get("/statements/date", verifyIfExistsAccountCPF, (request, response) => {
   return response.json(foundStatementsByDate);
 });
 
+app.put("/accounts", verifyIfExistsAccountCPF, (request, response) => {
+  const { name } = request.body;
+  const { customer } = request;
+
+  customer.name = name;
+
+  return response.status(201).json();
+});
+
+app.get("/accounts", verifyIfExistsAccountCPF, (request, response) => {
+  const { customer } = request;
+
+  return response.json(customer);
+});
+
 app.listen(3333, () => console.log("⚙️  Api listening on port: 3333 ⚙️"));

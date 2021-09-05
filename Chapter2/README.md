@@ -8,9 +8,9 @@
 - [x] Must be possible to search the bank statement of the client.
 - [x] Must be possible to make a deposit.
 - [x] Must be possible to make a withdrawal.
-- [ ] Must be possible to search the bank statement by date.
-- [ ] Must be possible to update the client account data.
-- [ ] Must be possible to get the client account data.
+- [x] Must be possible to search the bank statement by date.
+- [x] Must be possible to update the client account data.
+- [x] Must be possible to get the client account data.
 - [ ] Must be possible to delete an account.
 
 ### Business Rules

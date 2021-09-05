@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## Ep 8
+
+- Update customer Data
+- Get customer Data
+
 ## Ep 7
 
 - Search a statement by date.
