@@ -2,9 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## Ep 6
+
+- Customer can make a withdrawl.
+- Customer cannot make a withdrawl with insufficient funds.
+
 ## Ep 5
 
-- Customent can create a new statement operation.
+- Customer can create a new statement operation.
+- Cannot create a new deposit if the account does not exists.
 
 ## Ep 5
 
