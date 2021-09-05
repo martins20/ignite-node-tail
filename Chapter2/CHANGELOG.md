@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Ep 9
+
+- Delete a customer account
+
 ## Ep 8
 
 - Update customer Data
